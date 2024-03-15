@@ -1,0 +1,9 @@
+.card {
+  /* width: 100%; */
+  min-height: 12rem;
+  background: var(--background-card-color);
+  border-radius: 16px;
+  border: var(--border-card);
+  color: var(--invert-color);
+  display: grid;
+}

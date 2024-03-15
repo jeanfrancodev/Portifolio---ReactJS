@@ -1,0 +1,12 @@
+{"profile": 
+   {
+     "name": "Jean",
+     "nickName": "Jean Franco",
+     "idade": 31,
+     "contact": "+351 963-329-230",
+     "socialMedia": {
+       "linkedin": "https://www.linkedin.com/in/jean-franco-81a496249/",
+       "gitHub": "https://github.com/jeanfrancodev"
+     }
+   }
+}
