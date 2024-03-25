@@ -1,0 +1,36 @@
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.school-name {
+  color: #5b78f6;
+  font-size: 24px;
+}
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.subtitle p:last-child {
+  color: #5b78f6;
+}
+
+.description p {
+  letter-spacing: 0.2px;
+  word-spacing: 0.5px;
+}
+
+.language {
+  display: flex;
+  gap: 8px;
+}
+.language p:nth-child(2) {
+  color: #5b78f6;
+}

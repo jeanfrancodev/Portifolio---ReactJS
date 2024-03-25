@@ -1,38 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import './global.css'
 import './index.css'
 import Homepage from './pages/Homepage/Homepage.jsx'
 import Portifolio from './pages/Portifolio/Portifolio.jsx'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import About from './pages/About/About.jsx'
+import Education from './pages/Education/Education.jsx'
 import Contacts from './pages/Contacts/Contacts.jsx'
 import Header from './components/header/Header.jsx'
 import Footer from './components/footer/Footer.jsx'
+import { ProfileProvider } from './context/useProfile.jsx'
+import { About } from './pages/About/About.jsx'
+import { ThemeContext, ThemeProvider } from './context/themeContext.jsx'
 
 const Layout = () => {
-  const [profile, setProfile] = useState(null)
-  useEffect(() => {
-    try {
-      fetch('profile.json', {
-        headers: {
-          Accept: 'application/json'
-        }
-      })
-        .then(res => res.json())
-        .then(async res => {
-          setProfile(res.profile)
-        })
-    } catch (error) {
-      console.log(error)
-    }
-  }, [])
-
   return (
     <>
-      <Header profile={profile} />
+      <Header />
       <Outlet />
-      <Footer profile={profile} />
+      <Footer />
     </>
   )
 }
@@ -54,6 +40,12 @@ const router = createBrowserRouter([
         // }
       },
       {
+        path: '/education',
+        element: <Education />
+        // errorElement: <Error />,
+        // }
+      },
+      {
         path: '/contacts',
         element: <Contacts />
         // errorElement: <Error />,
@@ -71,6 +63,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <ProfileProvider>
+        <RouterProvider router={router} />
+      </ProfileProvider>
+    </ThemeProvider>
   </>
 )

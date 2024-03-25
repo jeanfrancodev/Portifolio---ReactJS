@@ -7,3 +7,9 @@
   color: var(--invert-color);
   display: grid;
 }
+
+@media screen and (max-width: 425px) {
+  .card {
+    min-height: 0px;
+  }
+}

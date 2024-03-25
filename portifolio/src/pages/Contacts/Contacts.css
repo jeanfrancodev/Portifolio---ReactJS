@@ -1,0 +1,56 @@
+.grid-card-contact {
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.card-fone-email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.grid-card-form {
+  grid-column: 3/6;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card-link div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-link div a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
+}
+.p-contact {
+  font-size: 14px;
+  color: var(--invert-color);
+}
+.title-click-access {
+  font-size: 20px;
+  color: var(--invert-color);
+}
+.container-reverse {
+  display: contents;
+}
+@media screen and (max-width: 425px) {
+  .container-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}

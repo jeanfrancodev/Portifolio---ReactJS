@@ -1,12 +1,45 @@
 {"profile": 
    {
-     "name": "Jean",
-     "nickName": "Jean Franco",
-     "idade": 31,
-     "contact": "+351 963-329-230",
-     "socialMedia": {
+    "name": "Jean",
+    "nickName": "Jean Franco",
+    "age": 31,
+    "contacts": {
+      "fone":"+351 963-329-230",
+      "email":"jeanoliveirafranco@gmail.com",
        "linkedin": "https://www.linkedin.com/in/jean-franco-81a496249/",
        "gitHub": "https://github.com/jeanfrancodev"
-     }
+    },
+    "objetive": "Após alguns anos de estudo e prática, quero me integrar a um time capacitado pra aprender com situações e problemas reais. Estou entusiasmado para ter contato com desenvolvimento de aplicações complexas, quero colocar em prática todas minhas skills adquiridas até hoje.",
+    "education":[  
+      {
+      "schoolName":"Ensino Superior - Faculdade das Américas",
+      "formation":"Análise e Desenvolvimento de Sistemas EAD",
+      "local":"São Paulo, BR",
+      "data":"Jan 2023 - Jul 2025",
+      "description":"  Curso superior, me traz uma base dos fundamentos da computação, indo desde o funcionamento de hardware, até o desenvolvimento de softwares.",
+      "language":"C, JAVA, HTML, CSS, SQL"
+      },
+      {
+      "schoolName":"EDIT - Disruptive Digital Education",
+      "formation":"Developer Full-Stack - Presencial",
+      "local":"Porto - PT",
+      "data":"Set 2023 - Mar 2024",
+      "description":"Esta formação inclui os conhecimentos necessários para trabalhar nas áreas de back‑end & front‑end, seguindo as boas práticas de programação. O curso é composto por aulas teóricas e práticas, integradas, incluindo o desenvolvimento de projetos com a presença de profissionais reconhecidos da área, que partilham suas experiências reais e desafios atuais do mercado.",
+      "language":"JS, TypeScript, NodeJS, ReactJS, HTML, CSS, NoSQL"
+     },
+     { 
+     "schoolName":"Generation Brasil",
+     "formation":"Developer Full-Stack ",
+     "local":"São Paulo, BR",
+     "data":"Jun 2022 - Set 2022",
+     "description":"Participei de processos de desenvolvimento de aplicações full‑stack, usando metodologia ágil (SCRUM), realizei atividades simulando situações adversas que um desenvolvedor encontra na área de tecnologia. curso realizado online com carga de 8h/dia, por 4h treinávamos softskills, e outras 4h escrevendo e praticando código.",
+     "language":"C#, .NET, ReactJS, HTML, CSS, SQL"
+    }],
+    "linkProject":{
+      "htmlCss":"https://github.com/jeanfrancodev/HTML-e-CSS/tree/master/1-2-sports-card",
+      "javaScript":"https://github.com/jeanfrancodev/EcommerceProjectStudant/tree/master/ApiAnimes",
+      "javaScript1":"https://github.com/jeanfrancodev/EcommerceProjectStudant/tree/master/APIEcommerce"
+    },
+    "skills":["• Organização  • Capacidade analítica  • Comunicação  • Aprendo Rápido"," • Trabalho em equipe  • Orientação ao detalhe"]  
    }
 }

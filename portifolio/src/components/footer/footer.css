@@ -17,7 +17,7 @@
   color: var(--invert-color);
 }
 .top-footer p:last-child {
-  color: var(--footer-name-color);
+  color: var(--title-color);
 }
 .mid-footer {
   display: flex;
@@ -42,5 +42,11 @@
   color: var(--invert-color);
 }
 .bot-footer p:last-child {
-  color: var(--footer-name-color);
+  color: var(--title-color);
+}
+
+@media screen and (max-width: 425px) {
+  .mid-footer {
+    display: none;
+  }
 }

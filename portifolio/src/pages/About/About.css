@@ -1,0 +1,29 @@
+.grid-about {
+  grid-column: 2/6;
+}
+.card-about {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.card-about p:first-child {
+  text-align: center;
+  color: #5b78f6;
+}
+
+.content-about {
+  text-align: justify;
+  margin-top: 0.6rem;
+}
+
+.objetive-about {
+  text-align: justify;
+  margin-top: 0.6rem;
+}
+
+.skills-about {
+  text-align: center;
+  margin-top: 0.6rem;
+}

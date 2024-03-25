@@ -9,7 +9,11 @@ body.light {
   --background-card-color: #ffffff;
   --card-content-color: #000000;
   --border-card: solid 1px #bcbcbc;
-  --footer-name-color: #5b78f6;
+  --title-color: #5b78f6;
+  --background-card-letswork: #0f0f0f;
+  --img-button-theme: url('./img-button-theme/night-mode-black.png');
+  --img-button-theme-hover: url('./img-button-theme/night-mode.png');
+  --img-button-menu: url('./img-home/menu.png')
 }
 
 body.dark {
@@ -18,5 +22,9 @@ body.dark {
   --background-card-color: linear-gradient(90deg, #363636 7%, #1c1c1c 78%);
   --card-content-color: #bcbcbc;
   --border-card: solid 1px #363636;
-  --footer-name-color: #ffffff;
+  --title-color: #ffffff;
+  --background-card-letswork: #0f0f0f;
+  --img-button-theme: url('./img-button-theme/light-mode.png');
+  --img-button-theme-hover: url('./img-button-theme/light-mode-black.png');
+  --img-button-menu: url('./img-home/menu-white.png')
 }

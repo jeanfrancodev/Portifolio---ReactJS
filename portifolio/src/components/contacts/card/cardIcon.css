@@ -1,0 +1,11 @@
+.card-circle {
+  width: 6rem;
+  height: 6rem;
+  background: var(--background-card-color);
+  border: var(--border-card);
+  color: var(--invert-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
