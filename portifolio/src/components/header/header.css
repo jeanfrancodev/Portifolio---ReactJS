@@ -9,15 +9,27 @@
   font-size: 14px;
   padding: 2rem 0 3rem 0;
 }
+
 .header-title {
   font-family: outfit;
   font-size: 30px;
-  color: var(--title-color);
+  color: #5b78f6;
 }
-.menu {
+.header-title:hover {
+  color: var(--invert-color);
+}
+
+.menu-inactive {
   display: flex;
   gap: 2rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.menu-inactive p:hover {
+  color: var(--invert-color);
+}
+.menu-inactive p {
+  color: #676767;
 }
 .menu-button {
   display: none;
@@ -41,24 +53,51 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.header p {
-  cursor: pointer;
-}
-.header p:hover {
-  color: var(--invert-color);
-}
+
 .navlink {
   text-decoration: none;
-  color: #676767;
 }
 
 @media screen and (max-width: 425px) {
-  .menu {
+  .overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+  }
+  .menu-inactive {
     display: none;
   }
+
+  .menu-active .navlink {
+    color: var(--invert-color);
+  }
+  .menu-active {
+    position: absolute;
+    background: var(--background-card-color);
+    border: var(--border-card);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.6rem;
+    flex-direction: column;
+    z-index: 2;
+    top: 4rem;
+    width: 50%;
+    font-size: 28px;
+  }
+  .menu-active p {
+    color: #bcbcbc;
+  }
+
+  .menu-active p:hover {
+    color: var(--title-color);
+  }
+
   .header {
     height: 1rem;
   }
+
   .button-theme {
     width: 50px;
   }
@@ -74,5 +113,6 @@
     background-size: contain;
     background-color: var(--main-color);
     border: var(--border-card);
+    position: relative;
   }
 }

@@ -27,3 +27,12 @@
   text-align: center;
   margin-top: 0.6rem;
 }
+
+@media screen and (max-width: 425px) {
+  .skills-about {
+    display: flex;
+    flex-direction: column;
+    font-variant: all-petite-caps;
+    font-size: 22px;
+  }
+}

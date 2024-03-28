@@ -1,4 +1,4 @@
-import './cardInternal.css'
+import './cardProfile.css'
 
 const CardProfile = ({ props }) => {
   const { schoolName, formation, data, local, description, language } = props

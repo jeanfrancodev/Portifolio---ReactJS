@@ -17,7 +17,7 @@
   width: 3rem;
   height: 6rem;
 }
-.lets-work-content img:last-child {
+.lets-work-content div {
   align-self: self-end;
 }
 @media screen and (max-width: 425px) {
@@ -26,7 +26,7 @@
     font-size: 32px;
   }
 
-  .lets-work-content span{
+  .lets-work-content span {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -34,4 +34,3 @@
     align-items: center;
   }
 }
-

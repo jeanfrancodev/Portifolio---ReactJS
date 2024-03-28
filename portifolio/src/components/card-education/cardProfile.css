@@ -34,3 +34,23 @@
 .language p:nth-child(2) {
   color: #5b78f6;
 }
+
+@media screen and (max-width: 425px) {
+  .title {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  .school-name {
+    font-size: 20px;
+  }
+  .subtitle {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .description {
+    text-align: justify;
+  }
+  .language p:first-child {
+    display: none;
+  }
+}

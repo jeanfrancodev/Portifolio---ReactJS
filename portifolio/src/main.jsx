@@ -1,4 +1,3 @@
-import React, { useContext, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import './global.css'
 import './index.css'
@@ -11,13 +10,17 @@ import Header from './components/header/Header.jsx'
 import Footer from './components/footer/Footer.jsx'
 import { ProfileProvider } from './context/useProfile.jsx'
 import { About } from './pages/About/About.jsx'
-import { ThemeContext, ThemeProvider } from './context/themeContext.jsx'
+import { ThemeProvider } from './context/themeContext.jsx'
+import { MenuProvider } from './context/menuContext.jsx'
+import { ContainerMain } from './components/card/container-main/Container-main.jsx'
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <ContainerMain>
+        <Outlet />
+      </ContainerMain>
       <Footer />
     </>
   )
@@ -65,7 +68,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <ThemeProvider>
       <ProfileProvider>
-        <RouterProvider router={router} />
+        <MenuProvider>
+          <RouterProvider router={router} />
+        </MenuProvider>
       </ProfileProvider>
     </ThemeProvider>
   </>

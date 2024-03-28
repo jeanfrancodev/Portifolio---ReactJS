@@ -7,7 +7,6 @@ export const About = () => {
 
   return (
     <>
-      <div className="container">
         <div className="grid-about">
           <Card>
             <div className="card-about">
@@ -40,7 +39,6 @@ export const About = () => {
             </div>
           </Card>
         </div>
-      </div>
     </>
   )
 }

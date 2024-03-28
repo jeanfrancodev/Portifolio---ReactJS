@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  word-break: break-word;
+  align-items: self-end;
 }
 .card-content div {
   display: flex;
@@ -52,7 +52,7 @@ a {
   .card-img {
     padding: 0.7rem;
   }
-  .card-content div {
+  .card-content div:first-child {
     display: flex;
     flex-direction: row;
     gap: 8px;

@@ -1,4 +1,4 @@
-import Icon from '../../Icon'
+import Icon from '../icon-component/Icon'
 import './contentCard.css'
 
 function ContentCard(props) {
@@ -26,7 +26,9 @@ function ContentCard(props) {
             <p>{props.title}</p>
             <p>{props.subtitle}</p>
           </div>
-          <Icon />
+          <div className="icon">
+            <Icon />
+          </div>
         </div>
       </div>
     </>
