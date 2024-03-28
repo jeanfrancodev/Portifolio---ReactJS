@@ -4,7 +4,7 @@ import Card from '../../components/card/card-main/Card'
 import { useProfile } from '../../context/useProfile'
 import ContentCard from '../../components/homepage/ContentCard'
 
-const Portifolio = () => {
+const Projects = () => {
   const { profile } = useProfile()
 
   return (
@@ -42,8 +42,17 @@ const Portifolio = () => {
           />
         </Card>
       </div>
+      <div className="project-4">
+        <Card>
+          <ContentCard
+            video="/video/SeeThisProject.mp4"
+            title="Projeto - 'Portfolio'  REACT"
+            subtitle={<a href={profile?.linkProject.react}>Veja no github. </a>}
+          />
+        </Card>
+      </div>
     </>
   )
 }
 
-export default Portifolio
+export default Projects
