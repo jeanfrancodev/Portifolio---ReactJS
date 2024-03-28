@@ -10,10 +10,10 @@ body.light {
   --card-content-color: #000000;
   --border-card: solid 1px #bcbcbc;
   --title-color: #5b78f6;
-  --img-button-theme: url('./img-button-theme/night-mode-black.png');
-  --img-button-theme-hover: url('./img-button-theme/night-mode.png');
-  --img-button-menu: url('./img-home/menu.png');
-  --img-icon-card: url('./icons/icon-black.png');
+  --img-button-theme: url('img-button-theme/night-mode-black.png');
+  --img-button-theme-hover: url('img-button-theme/night-mode.png');
+  --img-button-menu: url('img-home/menu.png');
+  --img-icon-card: url('icons/icon-black.png');
 }
 
 body.dark {
@@ -23,8 +23,8 @@ body.dark {
   --card-content-color: #bcbcbc;
   --border-card: solid 1px #363636;
   --title-color: #ffffff;
-  --img-button-theme: url('./img-button-theme/light-mode.png');
-  --img-button-theme-hover: url('./img-button-theme/light-mode-black.png');
-  --img-button-menu: url('./img-home/menu-white.png');
-  --img-icon-card: url('./icons/icon-white.png');
+  --img-button-theme: url('img-button-theme/light-mode.png');
+  --img-button-theme-hover: url('img-button-theme/light-mode-black.png');
+  --img-button-menu: url('img-home/menu-white.png');
+  --img-icon-card: url('icons/icon-white.png');
 }
